@@ -1,0 +1,23 @@
+{
+  "name": "oscardegarza-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suarezalan98/oscardegarza-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suarezalan98/oscardegarza-website/issues"
+  },
+  "homepage": "https://github.com/Suarezalan98/oscardegarza-website#readme"
+}
