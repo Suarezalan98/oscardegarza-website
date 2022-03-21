@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif; }
+
+.homepage {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  color: #ffffff;
+  z-index: 2;
+  transition: 0.5s; }
+
+.homepage.active {
+  right: 300px; }
+
+.homepage header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px 60px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.homepage h1 {
+  font-size: 32px; }
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.title-word {
+  animation: color-animation 4s linear infinite; }
+
+.title-word-1 {
+  --color-1: #df8453;
+  --color-2: #3d8dae;
+  --color-3: #e4a9a8; }
+
+.title-word-2 {
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d; }
+
+.title-word-3 {
+  --color-1: #accfcb;
+  --color-2: #e4a9a8;
+  --color-3: #accfcb; }
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1); }
+  32% {
+    color: var(--color-1); }
+  33% {
+    color: var(--color-2); }
+  65% {
+    color: var(--color-2); }
+  66% {
+    color: var(--color-3); }
+  99% {
+    color: var(--color-3); }
+  100% {
+    color: var(--color-1); } }
+
+.logo {
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer; }
+
+.toggle.active {
+  background: url(close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center; }
+
+.homepage video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); }
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.menu ul {
+  position: relative;
+  list-style: none; }
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #000000; }
+
+.menu ul li a:hover {
+  color: #7a7a7a; }
+
+@media (max-width: 798px) {
+  .homepage,
+  .homepage header {
+    padding: 40px; } }
