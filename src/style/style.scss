@@ -1,4 +1,6 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
+@import "../../node_modules/animate.css/animate.css";
 
 $base-font-color: #ffffff;
 $base-background-color: #000000;
@@ -50,51 +52,51 @@ $dark-gray: #7a7a7a;
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
 
-.title-word {
-  animation: color-animation 4s linear infinite;
-}
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
 
-.title-word-1 {
-  --color-1: #df8453;
-  --color-2: #3d8dae;
-  --color-3: #e4a9a8;
-}
+  .title-word-1 {
+    --color-1: #df8453;
+    --color-2: #3d8dae;
+    --color-3: #e4a9a8;
+  }
 
-.title-word-2 {
-  --color-1: #dbad4a;
-  --color-2: #accfcb;
-  --color-3: #17494d;
-}
+  .title-word-2 {
+    --color-1: #dbad4a;
+    --color-2: #accfcb;
+    --color-3: #17494d;
+  }
 
-.title-word-3 {
-  --color-1: #accfcb;
-  --color-2: #e4a9a8;
-  --color-3: #accfcb;
-}
+  .title-word-3 {
+    --color-1: #accfcb;
+    --color-2: #e4a9a8;
+    --color-3: #accfcb;
+  }
 
-@keyframes color-animation {
-  0% {
-    color: var(--color-1);
-  }
-  32% {
-    color: var(--color-1);
-  }
-  33% {
-    color: var(--color-2);
-  }
-  65% {
-    color: var(--color-2);
-  }
-  66% {
-    color: var(--color-3);
-  }
-  99% {
-    color: var(--color-3);
-  }
-  100% {
-    color: var(--color-1);
+  @keyframes color-animation {
+    0% {
+      color: var(--color-1);
+    }
+    32% {
+      color: var(--color-1);
+    }
+    33% {
+      color: var(--color-2);
+    }
+    65% {
+      color: var(--color-2);
+    }
+    66% {
+      color: var(--color-3);
+    }
+    99% {
+      color: var(--color-3);
+    }
+    100% {
+      color: var(--color-1);
+    }
   }
 }
 
@@ -103,18 +105,23 @@ $dark-gray: #7a7a7a;
   cursor: pointer;
 }
 
+.navbar-font-size {
+  text-transform: uppercase;
+  // font-size: 16px;
+}
+
 .toggle {
   position: relative;
   width: 60px;
   height: 60px;
-  background: url(menu.png);
+  background: url(../assets/menu.png);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
   cursor: pointer;
 }
 .toggle.active {
-  background: url(close.png);
+  background: url(../assets/close.png);
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
@@ -176,5 +183,68 @@ $dark-gray: #7a7a7a;
   .homepage,
   .homepage header {
     padding: 40px;
+  }
+}
+
+.about {
+  background: $base-background-color;
+  min-height: 100vh;
+  color: $base-font-color;
+
+  // .about-me {
+  //   max-height: 100vh;
+  // }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .about-title {
+    padding-top: 0.2em;
+    padding-left: 0.3em;
+  }
+
+  .about-desc {
+    position: relative;
+    bottom: 30em;
+
+    .about-text {
+      text-align: left;
+    }
+  }
+
+  // .about-tools {
+  //   max-height: 100vh;
+  // }
+
+  @media (max-width: 1400px) {
+    .about-desc {
+      position: relative;
+      bottom: 25em;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .about-desc {
+      position: relative;
+      bottom: 20em;
+    }
+  }
+
+  @media (max-width: 990px) {
+    .about-desc {
+      position: initial;
+      margin-top: 2em;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-title {
+      text-align: center;
+    }
+
+    .about-text {
+      text-align: center;
+    }
   }
 }
