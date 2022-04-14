@@ -1,3 +1,6 @@
+import "../style/style.scss"
+import "animate.css"
+
 const menuToggle = document.querySelector(".toggle");
 const homepage = document.querySelector(".homepage");
 
