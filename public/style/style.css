@@ -11341,5 +11341,8 @@ textarea.form-control-lg {
   background: #000000;
   color: #ffffff;
 }
+#photography .grid-item {
+  width: 400px;
+}
 
 /*# sourceMappingURL=style.css.map */

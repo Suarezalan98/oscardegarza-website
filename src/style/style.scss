@@ -257,4 +257,25 @@ $dark-gray: #7a7a7a;
 #photography {
   background: $base-background-color;
   color: $base-font-color;
+
+  .grid-item {
+    width: 400px;
+  }
+
+  // .masonry-with-columns {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   .list-item {
+  //     height: 550px;
+  //     line-height: 150px;
+  //     background: #ec985a;
+  //     color: white;
+  //     margin: 0 1rem 1rem 0;
+  //     text-align: center;
+  //     font-family: system-ui;
+  //     font-weight: 900;
+  //     font-size: 2rem;
+  //     flex: 0 0 auto;
+  //   }
+  // }
 }
