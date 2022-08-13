@@ -258,8 +258,20 @@ $dark-gray: #7a7a7a;
   background: $base-background-color;
   color: $base-font-color;
 
+  // .grid {
+  //   margin: 0 auto;
+  // }
+
+  .grid-sizer,
   .grid-item {
-    width: 400px;
+    width: 33.3%;
+  }
+
+  .grid-item {
+    padding: 0.4em;
+    img {
+      width: 100%;
+    }
   }
 
   // .masonry-with-columns {

@@ -11341,8 +11341,15 @@ textarea.form-control-lg {
   background: #000000;
   color: #ffffff;
 }
+#photography .grid-sizer,
 #photography .grid-item {
-  width: 400px;
+  width: 33.3%;
+}
+#photography .grid-item {
+  padding: 0.4em;
+}
+#photography .grid-item img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

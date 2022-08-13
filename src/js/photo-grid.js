@@ -1,11 +1,14 @@
 import "../style/style.scss";
 import "animate.css";
-import Masonry from "masonry-layout";
 
 window.onload = () => {
   const grid = document.querySelector(".grid");
 
-  const masonry = new Masonry(grid);
+  const masonry = new Masonry(grid, {
+    itemSelector: ".grid-item",
+    columnWidth: ".grid-sizer",
+    percentPosition: true,
+  });
 };
 
 // $(".grid").masonry({
