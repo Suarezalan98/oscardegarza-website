@@ -11352,4 +11352,19 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+#videography {
+  background: #000000;
+  color: #ffffff;
+}
+#videography .grid-sizer,
+#videography .grid-item {
+  width: 33.3%;
+}
+#videography .grid-item {
+  padding: 0.4em;
+}
+#videography .grid-item video {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

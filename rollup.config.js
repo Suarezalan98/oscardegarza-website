@@ -11,7 +11,7 @@ export default [
     plugins: [scss({ output: "./public/js/style.css" }), css(), nodeResolve()],
   },
   {
-    input: "./src/js/photo-grid.js",
+    input: "./src/js/asset-grid.js",
     output: {
       dir: "./public/js/",
     },
