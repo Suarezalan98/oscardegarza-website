@@ -304,10 +304,21 @@ $dark-gray: #7a7a7a;
     width: 33.3%;
   }
 
+  .grid-item--width2 {
+    width: 66.6%;
+  }
+  // .grid-sizer,
+  // .grid-item--width2 {
+  //   width: 66.6%;
+  // }
+  
+
   .grid-item {
     padding: 0.4em;
     video {
       width: 100%;
     }
   }
+
+  
 }

@@ -11360,6 +11360,9 @@ textarea.form-control-lg {
 #videography .grid-item {
   width: 33.3%;
 }
+#videography .grid-item--width2 {
+  width: 66.6%;
+}
 #videography .grid-item {
   padding: 0.4em;
 }
